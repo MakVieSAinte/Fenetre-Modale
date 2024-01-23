@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Modale + Onglet</title>
+   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="@Import-Icone-Bootstrap/bootstrap-icons.css">
+</head>
+<body>
+   
+<div class="modal-container">
+
+<div class="overlay modal-declencheur">
+
+</div>
+
+
+<div class="modal" role="dialog" aria-labelledby="modalTitre" aria-describedby="dialogDescription">
+   <button aria-label="fermer la modal" class="close-modal modal-declencheur">X</button>
+   
+<div class="tabs">
+
+   <div class="tabs-btn-container" role="tablist" aria-label="tabs component">
+
+      <button class="tab active-tab" role="tab" aria-controls="panel-1" id="tab-1" type="button" aria-selected="true" tabindex="0">
+         <i class="bi bi-windows">&nbsp;</i>Windows
+      </button>
+
+      <button class="tab" role="tab" aria-controls="panel-2" id="tab-2" type="button" aria-selected="false" tabindex="-1">
+         <i class="bi bi-apple">&nbsp;</i>MacOS
+      </button>
+
+      <button class="tab" role="tab" aria-controls="panel-3" id="tab-3" type="button" aria-selected="false" tabindex="-2">
+         <i class="bi bi-ubuntu">&nbsp;</i>Ubuntu
+      </button>
+      
+   </div>
+
+   <div class="tab-content active-tab-content" role="tabpanel" id="panel-1" aria-labelledby="tab-1" tabindex="0">
+      <table>
+         <tbody>
+               <tr>
+                  <td>
+                     <i class="bi bi-windows">&nbsp;&nbsp;</i>
+                     2.80 Beta Windows 64 bit <br>
+                     <span>Decembre 20, 01:05:29 - a91886e76ebd</span>
+                  </td>
+                  <td>Beta</td>
+                  <td>121.90MB</td>
+               </tr>
+
+               <tr>
+                  <td>
+                     <i class="bi bi-windows">&nbsp;&nbsp;</i>
+                     2.80 Beta Windows 32 bit <br>
+                     <span>Decembre 20, 01:05:29 - a91886e76ebd</span>
+                  </td>
+                  <td>Beta</td>
+                  <td>93.27MB</td>
+               </tr>
+
+               <tr>
+                  <td>
+                     <i class="bi bi-windows">&nbsp;&nbsp;</i>
+                     2.79 Windows 64 bit <br>
+                     <span>Decembre 20, 01:05:29 - a91886e76ebd</span>
+                  </td>
+                  <td class="master">Master</td>
+                  <td>131.29MB</td>
+               </tr>
+
+               <tr>
+                  <td>
+                     <i class="bi bi-windows">&nbsp;&nbsp;</i>
+                     2.79 Windows 32 bit <br>
+                     <span>Decembre 20, 01:05:29 - a91886e76ebd</span>
+                  </td>
+                  <td class="master">Master</td>
+                  <td>100.86MB</td>
+               </tr>
+         </tbody>
+      </table>
+   </div>
+
+   <div class="tab-content" role="tabpanel" id="panel-2" aria-labelledby="tab-2" tabindex="0">
+      <table>
+         <tbody>
+               <tr>
+                  <td>
+                     <i class="bi bi-apple">&nbsp;&nbsp;</i>
+                     2.80 Beta macOS 64 bit <br>
+                     <span>Decembre 20, 00:41:36 - a91886e76ebd</span>
+                  </td>
+                  <td>Beta</td>
+                  <td>125.57MB</td>
+               </tr>
+
+               <tr>
+                  <td>
+                     <i class="bi bi-apple">&nbsp;&nbsp;</i>
+                     2.80 macOS 32 bit <br>
+                     <span>Decembre 20, 00:05:05 - a91886e76ebd</span>
+                  </td>
+                  <td class="master">Master</td>
+                  <td>1442.57MB</td>
+               </tr>
+         </tbody>
+      </table>
+   </div>
+
+   <div class="tab-content" role="tabpanel" id="panel-3" aria-labelledby="tab-3" tabindex="0">
+      <table>
+         <tbody>
+               <tr>
+                  <td>
+                     <i class="bi bi-ubuntu">&nbsp;&nbsp;</i>
+                     2.80 Beta Ubuntu 64 bit <br>
+                     <span>Decembre 20, 00:28:44 - a91886e76ebd</span>
+                  </td>
+                  <td>Beta</td>
+                  <td>134.47MB</td>
+               </tr>
+
+               <tr>
+                  <td>
+                     <i class="bi bi-ubuntu">&nbsp;&nbsp;</i>
+                     2.80 Beta Ubuntu 32 bit <br>
+                     <span>Decembre 20, 01:22:54 - a91886e76ebd</span>
+                  </td>
+                  <td>Beta</td>
+                  <td>115.96MB</td>
+               </tr>
+
+               <tr>
+                  <td>
+                     <i class="bi bi-ubuntu">&nbsp;&nbsp;</i>
+                     2.79 Ubuntu 64 bit <br>
+                     <span>Decembre 20, 01:01:48 - a91886e76ebd</span>
+                  </td>
+                  <td class="master">Master</td>
+                  <td>163.10MB</td>
+               </tr>
+
+               <tr>
+                  <td>
+                     <i class="bi bi-ubuntu">&nbsp;&nbsp;</i>
+                     2.79 Ubuntu 32 bit <br>
+                     <span>Decembre 20, 01:04:48 - a91886e76ebd</span>
+                  </td>
+                  <td class="master">Master</td>
+                  <td>145.29MB</td>
+               </tr>
+         </tbody>
+      </table>
+   </div>
+   
+</div>
+
+</div>
+   
+</div>
+
+   <button class="modal-btn modal-declencheur">Télécharger Maintenant</button>
+
+   <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+*, ::before, ::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+} 
+
+body {
+   font-family: Roboto, helvetica;
+   background-color: rgb(59, 59, 59);
+}
+
+.modal-btn {
+   padding: 30px 44px;
+   font-size: 18px;
+   margin: 100px auto;
+   display: block;
+   min-width: 150px;
+   cursor: pointer;
+   background-image: linear-gradient(40deg, rgb(19, 18, 18), rgb(75, 71, 71));
+   color: #f9f9f9;
+   border-radius: 4px;
+}
+
+.modal-container {
+   visibility: hidden;
+   position: fixed;
+   top: 0;
+   width: 100vw;
+   height: 100vh;
+   transition: visibility 0.7s;
+}
+
+.modal-container.active {
+   visibility: visible;
+}
+.overlay {
+   opacity: 0;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: #161414ed;
+   transition: opacity 0.4s 0.2s ease-out;
+}
+
+.modal-container.active .overlay {
+   opacity: 1;
+   transition: opacity 0.4s 0.2s ease-out;
+}
+
+.modal {
+   opacity: 0;
+   width: 95%;
+   max-width: 700px;
+   min-width: 300px;
+   background-color: transparent;
+   border-radius: 10px;
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform:  translate(-50%, calc(-50% + 50px));
+   transition: opacity 0.4s ease-out;
+   transform: 0.4s ease-out;
+}
+
+.modal-container.active .modal {
+   opacity: 1;
+   transform:  translate(-50%, -50%);
+   transition: opacity 0.6s 0.2s ease-out;
+   transform: 0.4s 0.2s ease-out;
+}
+.close-modal {
+   padding: 10px 14px;
+   border: none;
+   border-radius: 5px;
+   font-size: 18px;
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   cursor: pointer;
+   background-image: linear-gradient(45deg, rgb(19, 18, 18), rgb(53, 51, 51));
+   color: #fff;
+}
+
+/* 925DEV */
+
+/* POur L'onglet */
+
+
+.tabs {
+   background-color: #212020;
+   max-width: 790px;
+   min-width: 300px;
+   height: auto !important;
+   margin: 100px auto;
+   border: 1px solid #ffffff3e;
+   color: #b7B7b2;
+   display: grid;
+   grid-template-rows: min-content 1fr;
+}
+
+.tabs-btn-container {
+   display: flex;
+   border-bottom: 1px solid #ffffff3e;
+}
+
+.tab {
+   border: none;
+   background-color: #141414;
+   color: #b4b2b2;
+   font-family: Open sans;
+   flex-basis: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: clamp(16px, 2vw, 20px);
+   font-weight: 700;
+   padding: 30px 0px;
+   cursor: pointer;
+}
+
+.tab-content {
+   grid-area: 2 / 1 / 3 / 2;
+   background-color: #212020;
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.4s ease-out;
+}
+
+/* Animation */
+
+.active-tab {
+   border-bottom: 3px solid rgb(14, 81, 190);
+   font-weight: bolder;
+   color: #fff;
+}
+
+.active-tab-content {
+   visibility: visible;
+   opacity: 1;
+}
+
+/* 925DEV */
+
+/* Pour le Tableaux */
+
+table {
+   width: 100%;
+   height: auto;
+}
+
+td {
+   color: #f9f9f9;
+   font-weight: 800;
+   padding: clamp(15px, 5vw, 15px);
+   cursor: pointer;
+}
+
+tr:hover {
+   background-color: #413f3fa7;
+}
+
+tr:hover td {
+   color: #f9f9f9;
+}
+
+td:nth-child(2) {
+   color: #b03204;
+   text-align: right;
+}
+
+td:nth-child(3) {
+   text-align: right;
+}
+
+td span {
+   color: #b4b2b2;
+   font-size: 12px;
+   padding-left: 27px;
+}
+
+td.master {
+   color: green;
+}
+
+i {
+   font-size: 17px;
+   padding: 0;
+}
+
+button i {
+   font-size: 30px;
+}
+
+/* 925DEV */
